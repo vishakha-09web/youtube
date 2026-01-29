@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<header class="header">
+  <div class="left">
+    <span class="menu" onclick="toggleSidebar()">☰</span>
+    <span class="logo">▶ YouTube</span>
+  </div>
+
+  <div class="center">
+    <input type="text" id="searchInput" placeholder="Search" onkeyup="searchVideos()">
+    <button>🔍</button>
+  </div>
+
+  <div class="right">
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+</header>
+
+<div class="main">
+  <nav class="sidebar" id="sidebar">
+    <a class="active">🏠 Home</a>
+    <a>🎬 Shorts</a>
+    <a>📺 Subscriptions</a>
+    <a>📚 Library</a>
+  </nav>
+
+  <section class="content">
+    <div class="videos" id="videoList">
+
+      <div class="video-card" onclick="openVideo('Build YouTube Clone')">
+        <img src="https://picsum.photos/400/230?1">
+        <h4>Build YouTube Clone using HTML</h4>
+        <p>Code With Vishakha</p>
+      </div>
+
+      <div class="video-card" onclick="openVideo('JavaScript Course')">
+        <img src="https://picsum.photos/400/230?2">
+        <h4>JavaScript Full Course</h4>
+        <p>Learn JS</p>
+      </div>
+
+      <div class="video-card" onclick="openVideo('Frontend Roadmap')">
+        <img src="https://picsum.photos/400/230?3">
+        <h4>Frontend Developer Roadmap</h4>
+        <p>Tech Guide</p>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
