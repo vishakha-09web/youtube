@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body.dark {
+  background: #181818;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #202020;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: red;
+  font-size: 22px;
+}
+
+/* SEARCH */
+.center input {
+  width: 300px;
+  padding: 8px;
+  background: #121212;
+  border: 1px solid #333;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #202020;
+  height: 100vh;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  background: #383838;
+}
+
+/* VIDEOS */
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card h4 {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* WATCH PAGE */
+.watch-container {
+  display: flex;
+  padding: 20px;
+}
+
+.video-player iframe {
+  width: 700px;
+  height: 400px;
+}
+
+.suggestions {
+  margin-left: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+    position: absolute;
+  }
+
+  .menu {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<header class="header">
+  <span class="logo">▶ YouTube</span>
+</header>
+
+<div class="watch-container">
+  <div class="video-player">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      frameborder="0" allowfullscreen></iframe>
+
+    <h2 id="videoTitle">Video Title</h2>
+    <p>1M views • 1 day ago</p>
+  </div>
+
+  <div class="suggestions">
+    <p>▶ Suggested Video 1</p>
+    <p>▶ Suggested Video 2</p>
+    <p>▶ Suggested Video 3</p>
+  </div>
+</div>
+
+<script>
+  document.getElementById("videoTitle").innerText =
+    localStorage.getItem("videoTitle");
+</script>
+
+</body>
+</html>
